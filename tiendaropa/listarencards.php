@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ListaCard</title>
 
   <!-- CSS bootstrap only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,7 +30,7 @@
           <li><a class="dropdown-item" href="nike.php">Nike</a></li>
           <li><a class="dropdown-item" href="mayora500.php">Mayor a $500</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Lista completa</a></li>
+          <li><a class="dropdown-item" href="agregarropa.html">Agregar Ropa</a></li>
         </ul>
       </li>
       <li class="nav-item">

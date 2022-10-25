@@ -30,7 +30,7 @@
           <li><a class="dropdown-item" href="nike.php">Nike</a></li>
           <li><a class="dropdown-item" href="mayora500.php">Mayor a $500</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Lista completa</a></li>
+          <li><a class="dropdown-item" href="agregarropa.html">Agregar Ropa</a></li>
         </ul>
       </li>
       <li class="nav-item">

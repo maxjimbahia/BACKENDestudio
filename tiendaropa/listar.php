@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ListadoRopa</title>
 
   <!-- CSS bootstrap only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,7 +30,7 @@
           <li><a class="dropdown-item" href="nike.php">Nike</a></li>
           <li><a class="dropdown-item" href="mayora500.php">Mayor a $500</a></li>
           <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Lista completa</a></li>
+          <li><a class="dropdown-item" href="agregarropa.html">Agregar Ropa</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -51,6 +51,9 @@
         <th>MARCA</th>
         <th>TALLE</th>
         <th>PRECIO</th>
+        <th>IMAGEN</th>
+        <th>EDITAR</th>
+        <th>BORRAR</th>
       </tr>
     
       <?php
@@ -78,11 +81,13 @@
           <td><?php echo $reg['marca']; ?></td>
           <td><?php echo $reg['talle']; ?></td>
           <td><?php echo $reg['precio']; ?></td>
+          <td><img src="data:image/png;base64, <?php echo base64_encode($reg['imagen'])?>" alt="" width="100px" height="100px">Imagen</td>
+          <td><a href="editar.php?id=<?php echo $reg['id'];?>">Editar</a></td>
+          <td><a href="borrar.php?id=<?php echo $reg['id'];?>">Borrar</a></td>
         </tr>
+        
       <?php } ?>
-    </table>
-
-      
+    </table>      
   
   <!-- JavaScript del bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
